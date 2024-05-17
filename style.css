@@ -16,9 +16,6 @@ header {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Darker shadow */
 }
 
-.header-container {
-}
-
 nav {
   list-style: none;
   padding: 0;
@@ -29,7 +26,7 @@ nav li {
   display: inline-block;
   margin-right: 10px;
   margin-left: 10px;
-  font-size: 1.25em
+  font-size: 1.25em;
 }
 
 nav a {
@@ -48,13 +45,7 @@ main {
   margin: 0 auto; /* Center the main content */
   padding: 50px 20px; /* Add padding for better spacing */
   text-align: center; /* Center-align text content */
-}
-
-/* Default font size for main content */
-main {
-  font-size: 18px;
-}
-section {
+  font-size: 18px; /* Default font size for main content */
 }
 
 section h2, section h3 {
@@ -64,7 +55,6 @@ section h2, section h3 {
 section p {
   line-height: 1.5;
 }
-
 
 .hero {
   position: relative;
@@ -77,45 +67,42 @@ section p {
 .hero h1 {
   color: #fff;
   font-size: 3em;
-  margin-top: 20px ;
-
+  margin-top: 20px;
 }
 
 /* Media query for screens smaller than 768px (tablets and below) */
-@media (max-width: 868px) {
+@media (max-width: 768px) {
   .hero {
     height: 60vh; /* Adjust the height for smaller screens */
   }
-   .hero h1, h1 {
+  .hero h1 {
     font-size: 2em; /* Adjust the font size for smaller screens */
   }
 }
 
 /* Media query for screens smaller than 576px (phones) */
-@media (max-width: 586px) {
+@media (max-width: 576px) {
   .hero {
     height: 40vh; /* Further adjust the height for smaller screens */
   }
-
-  .hero h1, h1 {
+  .hero h1 {
     font-size: 1em; /* Adjust the font size for smaller screens */
   }
-    nav li {
+  nav li {
     font-size: 1em;
   }
-
 }
 
+/* Media query for screens smaller than 478px (phones) */
 @media (max-width: 478px) {  
-    nav li {
+  nav li {
     font-size: 0.9em;
   }
-
 }
 
-
+/* Media query for screens smaller than 376px (phones) */
 @media (max-width: 376px) {  
-    nav li {
+  nav li {
     font-size: 0.8em;
   }
 }
@@ -124,15 +111,15 @@ section p {
 @media (max-width: 306px) {
   .hero {
     height: 40vh; /* Further adjust the height for smaller screens */
-    
   }
-    nav li, p, input, label, button {
+  nav li, p, input, label, button {
     font-size: 0.7em;
   }
-  .hero h1, h1 {
+  .hero h1 {
     font-size: 0.7em; /* Adjust the font size for smaller screens */
   }
 }
+
 footer {
   display: flex;
   justify-content: center;
@@ -166,6 +153,7 @@ a:hover {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .container-form {
   width: 50%;
   margin: 0 auto;
@@ -180,7 +168,6 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 form label {
@@ -189,7 +176,7 @@ form label {
 }
 
 form input, form textarea {
-    width: 80%;
+  width: 80%;
   margin-bottom: 10px;
   padding: 10px;
   font-size: 1em;
@@ -221,5 +208,3 @@ ul {
 ul li {
   margin-bottom: 10px;
 }
-
-

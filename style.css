@@ -1,8 +1,9 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
+  background-color: #111; /* Dark background */
+  color: #f5f5f5; /* Light text for contrast */
 }
 
 header {
@@ -11,8 +12,8 @@ header {
   justify-content: center; /* Align vertically in the middle */
   align-items: center;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #222; /* Slightly lighter than body */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Darker shadow */
 }
 
 .header-container {
@@ -32,8 +33,13 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: #f5f5f5; /* Light text for contrast */
   font-weight: bold;
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+nav a:hover {
+  color: #bbb; /* Slightly darker on hover */
 }
 
 main {
@@ -60,10 +66,40 @@ section p {
   width: 100%;
   max-width: 800px;
   margin-bottom: 20px;
+  border: 5px solid #fff; /* White border for emphasis */
 }
 
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #eee;
+  background-color: #222; /* Matches the header */
+  color: #bbb; /* Slightly darker text */
+}
+
+/* Additional styles for enhanced visual coherence */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Helvetica Neue', sans-serif;
+  text-transform: uppercase; /* Uppercase headings */
+  letter-spacing: 1px; /* Spacing between letters */
+}
+
+a {
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #bbb;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

@@ -61,21 +61,36 @@ section p {
 }
 
 .hero {
+  position: relative;
+  height: 100vh;
+  background: url('hero.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.hero img {
-  width: 100%;
-  max-width: 800px;
-  margin-bottom: 20px;
-  border: 5px solid #fff; /* White border for emphasis */
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 3em;
+  margin: 0;
 }
 
 footer {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
-  background-color: #222; /* Matches the header */
-  color: #bbb; /* Slightly darker text */
+  background: linear-gradient(to bottom, #000, #333); /* Dark gradient background, upside down */
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.5); /* Darker shadow */
+  text-align: center;
+  color: #bbb; /* Light text for contrast */
 }
 
 /* Additional styles for enhanced visual coherence */

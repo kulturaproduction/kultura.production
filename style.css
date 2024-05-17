@@ -12,7 +12,7 @@ header {
   justify-content: center; /* Align vertically in the middle */
   align-items: center;
   padding: 20px;
-  background-color: #222; /* Slightly lighter than body */
+  background: linear-gradient(to top, #000, #333); /* Dark gradient background */
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Darker shadow */
 }
 

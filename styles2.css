@@ -430,7 +430,7 @@ main {
 }
 
 
-@media (max-width: 340px) {
+@media (max-width: 375px) {
   .header, .footer {
     font-size: 20px;
     padding: 0 2px;
@@ -452,7 +452,7 @@ main {
 
 @media (max-width: 290px) {
   .header, .footer {
-    font-size: 18px;
+    font-size: 16px;
     padding: 0 1px;
   }
 

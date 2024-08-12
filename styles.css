@@ -1,0 +1,517 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  /* overflow-y: scroll; */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+}
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 0 15px;
+  background: #000;
+  height: 60px;
+  font-weight: 700;
+  line-height: 39px;
+  color: #FFFFFF;
+  font-size: 32px;
+  box-sizing: border-box;
+}
+
+.header {
+  top: 0;
+}
+
+.footer {
+  bottom: 0;
+}
+
+.headfoot-link-grey, .headfoot-link-grey a {
+  color: #9E9E9E;
+  text-decoration: none; /* Removes underline from anchor tags */
+
+}
+
+.headfoot-link-active a {
+  font-weight: 700;
+  line-height: 39px;
+  color: #FF0000;
+  font-size: 32px;
+  text-decoration: none; /* Removes underline from anchor tags */
+}
+
+.headfoot-link a {
+  font-weight: 700;
+  line-height: 39px;
+  color: #FFFFFF;
+  font-size: 32px;
+  text-decoration: none; /* Removes underline from anchor tags */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: #000;
+  padding-top: 61px;
+  padding-bottom: 61px;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  background: #000;
+  padding-top:16px;
+}
+
+.row {
+  background-color: #000; /* Example row background color */
+  flex: 0 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.central-row {
+  height:240px;
+  flex-direction: column;
+}
+
+.row img {
+  width: 33%;
+  height: 340px;
+  object-fit: cover;
+  margin: 0 5px;
+}
+
+.row h1 {
+  color: white;
+  font-size:160px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0; /* Remove top and bottom margins */
+}
+
+.row p {
+  color: white;
+  font-size:32px;
+  text-align: center;
+  margin-top: 0; /* Remove top and bottom margins */
+}
+
+.menu-container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item a {
+  line-height: 39px;
+  color: #717171;
+  font-size: 32px;
+  font-weight: 700;
+  box-sizing: border-box;
+  margin: 20px 40px;
+  text-decoration: none;
+
+}
+
+.menu-item-active a {
+  line-height: 39px;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  box-sizing: border-box;
+  margin: 20px 20px;
+  text-decoration: none;
+
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #000;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 500px;
+  height:650px;
+  margin: 20px 40px;
+  text-align: left;
+}
+
+.card img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  color: #FFFFFF;
+  margin: 5px 0;
+}
+
+.card-genre {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FC0000;
+  margin: 5px 0;
+}
+.card-description {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: 5px 0;
+}
+
+.card-button {
+  width: 100%; /* Makes the button full width */
+  height: 60px; /* Makes the button full height */
+  background-color: transparent; /* Makes the button transparent */
+  border: 1px solid white; /* Adds a white border */
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #FFFFFF;
+  margin: 5px 0;
+}
+
+.card-button:hover {
+  background-color: grey;
+}
+
+/* Events table styles */
+.container-80 {
+  width:60%;
+  margin: 0 auto;
+}
+
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1em;
+  min-width: 400px;
+}
+
+.events-table th, .events-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.events-table th {
+  color: #717171;
+}
+
+.events-table tr:hover {
+  background-color: #444;
+}
+
+.events-table td {
+  color: #f5f5f5;
+}
+
+.events-table .name {
+  font-weight: bold;
+}
+
+.link-button {
+  display: inline-block;
+  padding: 5px 30px;
+  margin: 20px 0;
+  font-size: 1em;
+  color: #f5f5f5;
+  text-decoration: none;
+  border: 2px solid #f5f5f5;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.link-button:hover {
+  background-color: #f5f5f5;
+  color: #333;
+  border-color: #333;
+}
+
+.link-button:active {
+  background-color: #444;
+  color: #fff;
+  border-color: #fff;
+}
+
+.contact-us {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* Adjust the gap value as needed */
+
+}
+
+.contact-us img {
+  height: 600px;
+}
+
+.contact-us-text h1 {
+  color: white;
+  font-size:120px;
+  text-align: left;
+  margin-top: 0; /* Remove top and bottom margins */
+  margin-bottom: 20px;
+}
+
+.contact-us-text p {
+  color: white;
+  font-size:24px;
+  text-align: left;
+  margin: 0; /* Remove top and bottom margins */
+}
+
+.contact-us-text .underlined {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  text-decoration: underline;
+  text-underline-offset: 15%; /* Adjust this value as needed */
+  color: white;
+}
+
+/* Combined max-width and max-height queries */
+
+/* When width is up to 1919px or height is up to 1030px */
+@media (max-width: 1919px), (max-height: 1030px) {
+  .row h1 {
+    font-size: 150px;
+  }
+}
+
+/* When width is up to 1769px or height is up to 980px */
+@media (max-width: 1769px), (max-height: 980px) {
+  .row h1 {
+    font-size: 140px;
+  }
+}
+
+/* When width is up to 1674px or height is up to 930px */
+@media (max-width: 1674px), (max-height: 930px) {
+  .row h1 {
+    font-size: 130px;
+  }
+  .central-row {
+    height: 220px;
+  }
+}
+
+/* When width is up to 1554px or height is up to 880px */
+@media (max-width: 1554px), (max-height: 880px) {
+  .row h1 {
+    font-size: 120px;
+  }
+}
+
+/* When width is up to 1419px or height is up to 830px */
+@media (max-width: 1419px), (max-height: 830px) {
+  .row h1 {
+    font-size: 110px;
+  }
+}
+
+/* When width is up to 1304px or height is up to 780px */
+@media (max-width: 1304px), (max-height: 780px) {
+  .row h1 {
+    font-size: 100px;
+  }
+}
+
+/* When width is up to 1194px or height is up to 730px */
+@media (max-width: 1194px), (max-height: 730px) {
+  .row h1 {
+    font-size: 90px;
+  }
+  .central-row {
+    height: 180px;
+  }
+  .row img {
+    height: 360px;
+  }
+}
+
+/* When width is up to 1069px or height is up to 680px */
+@media (max-width: 1069px), (max-height: 680px) {
+  .row h1 {
+    font-size: 80px;
+  }
+}
+
+/* When width is up to 949px or height is up to 630px */
+@media (max-width: 949px), (max-height: 630px) {
+  .row h1 {
+    font-size: 70px;
+  }
+  .row p {
+    font-size: 28px;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+  .row img {
+    width: 50%;
+  }
+}
+
+/* When width is up to 824px or height is up to 580px */
+@media (max-width: 824px), (max-height: 580px) {
+  .row h1 {
+    font-size: 60px;
+  }
+  .row p {
+    font-size: 24px;
+  }
+  .central-row {
+    height: 140px;
+  }
+  .row img {
+    height: 380px;
+  }
+}
+
+/* When width is up to 719px or height is up to 530px */
+@media (max-width: 719px), (max-height: 530px) {
+  .row h1 {
+    font-size: 50px;
+  }
+  .row p {
+    font-size: 20px;
+  }
+}
+
+/* Responsive font sizes and margins for specific small viewports */
+@media (max-width: 590px), (max-height: 480px) {
+  .header, .footer {
+    font-size: 28px;
+    padding: 0 14px;
+  }
+
+  main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .row h1 {
+    font-size: 40px;
+  }
+
+  .row p {
+    font-size: 16px;
+  }
+
+  .hide-on-mobile-small {
+    display: none;
+  }
+
+  .row img {
+    width: 100%;
+    height: 390px;
+  }
+}
+
+/* When width is up to 480px or height is up to 430px */
+@media (max-width: 480px), (max-height: 430px) {
+  .header, .footer {
+    font-size: 24px;
+    padding: 0 12px;
+  }
+
+  main {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .row h1 {
+    font-size: 20px;
+  }
+
+  .row p {
+    font-size: 12px;
+  }
+
+  .central-row {
+    height: 80px;
+  }
+  .row img {
+    height: 420px;
+  }
+}
+
+/* When width is up to 375px or height is up to 380px */
+@media (max-width: 375px), (max-height: 380px) {
+  .header, .footer {
+    font-size: 20px;
+    padding: 0 2px;
+  }
+
+  main {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .row h1 {
+    font-size: 18px;
+  }
+
+  .row p {
+    font-size: 11px;
+  }
+}
+
+/* When width is up to 300px or height is up to 330px */
+@media (max-width: 300px), (max-height: 330px) {
+  .header, .footer {
+    font-size: 16px;
+    padding: 0 1px;
+  }
+
+  main {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .row h1 {
+    font-size: 16px;
+  }
+
+  .row p {
+    font-size: 10px;
+  }
+}
+

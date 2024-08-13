@@ -1,0 +1,592 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  /* overflow-y: scroll; */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+}
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 0 15px;
+  background: #000;
+  height: 60px;
+  font-weight: 700;
+  line-height: 39px;
+  color: #FFFFFF;
+  font-size: 32px;
+  box-sizing: border-box;
+}
+
+.header {
+  top: 0;
+}
+
+.footer {
+  bottom: 0;
+}
+
+.headfoot-link-grey, .headfoot-link-grey a {
+  color: #9E9E9E;
+  text-decoration: none; /* Removes underline from anchor tags */
+
+}
+
+.headfoot-link-active a {
+  font-weight: 700;
+  line-height: 39px;
+  color: #FF0000;
+  font-size: 32px;
+  text-decoration: none; /* Removes underline from anchor tags */
+}
+
+.headfoot-link a {
+  font-weight: 700;
+  line-height: 39px;
+  color: #FFFFFF;
+  font-size: 32px;
+  text-decoration: none; /* Removes underline from anchor tags */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: #000;
+  padding-top: 61px;
+  padding-bottom: 61px;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  background: #000;
+  padding-top:16px;
+}
+
+.row {
+  background-color: #000; /* Example row background color */
+  flex: 0 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.central-row {
+  height:240px;
+  flex-direction: column;
+}
+
+.row img {
+  width: 33%;
+  height: 340px;
+  object-fit: cover;
+  margin: 0 5px;
+}
+
+.row h1 {
+  color: white;
+  font-size:160px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0; /* Remove top and bottom margins */
+}
+
+.row p {
+  color: white;
+  font-size:32px;
+  text-align: center;
+  margin-top: 0; /* Remove top and bottom margins */
+}
+
+.menu-container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item a {
+  line-height: 39px;
+  color: #717171;
+  font-size: 32px;
+  font-weight: 700;
+  box-sizing: border-box;
+  margin: 20px 40px;
+  text-decoration: none;
+
+}
+
+.menu-item-active a {
+  line-height: 39px;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  box-sizing: border-box;
+  margin: 20px 20px;
+  text-decoration: none;
+
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #000;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 500px;
+  height:650px;
+  margin: 20px 40px;
+  text-align: left;
+}
+
+.card img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  color: #FFFFFF;
+  margin: 5px 0;
+}
+
+.card-genre {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FC0000;
+  margin: 5px 0;
+}
+.card-description {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: 5px 0;
+}
+
+.card-button {
+  width: 100%; /* Makes the button full width */
+  height: 60px; /* Makes the button full height */
+  background-color: transparent; /* Makes the button transparent */
+  border: 1px solid white; /* Adds a white border */
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #FFFFFF;
+  margin: 5px 0;
+}
+
+.card-button:hover {
+  background-color: grey;
+}
+
+/* Events table styles */
+.container-80 {
+  width:60%;
+  margin: 0 auto;
+}
+
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1em;
+  min-width: 400px;
+}
+
+.events-table th, .events-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.events-table th {
+  color: #717171;
+}
+
+.events-table tr:hover {
+  background-color: #444;
+}
+
+.events-table td {
+  color: #f5f5f5;
+}
+
+.events-table .name {
+  font-weight: bold;
+}
+
+.link-button {
+  display: inline-block;
+  padding: 5px 30px;
+  margin: 20px 0;
+  font-size: 1em;
+  color: #f5f5f5;
+  text-decoration: none;
+  border: 2px solid #f5f5f5;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.link-button:hover {
+  background-color: #f5f5f5;
+  color: #333;
+  border-color: #333;
+}
+
+.link-button:active {
+  background-color: #444;
+  color: #fff;
+  border-color: #fff;
+}
+
+.contact-us {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* Adjust the gap value as needed */
+
+}
+
+.contact-us img {
+  height: 600px;
+}
+
+.contact-us-text h1 {
+  color: white;
+  font-size:120px;
+  text-align: left;
+  margin-top: 0; /* Remove top and bottom margins */
+  margin-bottom: 20px;
+}
+
+.contact-us-text p {
+  color: white;
+  font-size:24px;
+  text-align: left;
+  margin: 0; /* Remove top and bottom margins */
+}
+
+.contact-us-text .underlined {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  text-decoration: underline;
+  text-underline-offset: 15%; /* Adjust this value as needed */
+  color: white;
+}
+
+/* Revised Media Queries Using max-aspect-ratio */
+/* When aspect ratio is up to 1919/1030 */
+@media (max-aspect-ratio: 1919/1030) {
+  .row h1 {
+    font-size: 150px;
+  }
+}
+
+/* When aspect ratio is up to 1769/980 */
+@media (max-aspect-ratio: 1769/980) {
+  .row h1 {
+    font-size: 140px;
+  }
+}
+
+/* When aspect ratio is up to 1674/930 */
+@media (max-aspect-ratio: 1674/930) {
+  .row h1 {
+    font-size: 130px;
+  }
+  .central-row {
+    height: 220px;
+  }
+}
+
+/* When aspect ratio is up to 1554/880 */
+@media (max-aspect-ratio: 1554/880) {
+  .row h1 {
+    font-size: 120px;
+  }
+}
+
+/* When aspect ratio is up to 1419/830 */
+@media (max-aspect-ratio: 1419/830) {
+  .row h1 {
+    font-size: 110px;
+  }
+}
+
+/* When aspect ratio is up to 1304/780 */
+@media (max-aspect-ratio: 1304/780) {
+  .row h1 {
+    font-size: 100px;
+  }
+}
+
+/* When aspect ratio is up to 1194/730 */
+@media (max-aspect-ratio: 1194/730) {
+  .row h1 {
+    font-size: 90px;
+  }
+  .central-row {
+    height: 180px;
+  }
+  .row img {
+    height: 360px;
+  }
+}
+
+/* When aspect ratio is up to 1069/680 */
+@media (max-aspect-ratio: 1069/680) {
+  .row h1 {
+    font-size: 80px;
+  }
+}
+
+/* When aspect ratio is up to 949/630 */
+@media (max-aspect-ratio: 949/630) {
+  .row h1 {
+    font-size: 70px;
+  }
+  .row p {
+    font-size: 28px;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+  .row img {
+    width: 50%;
+  }
+}
+
+/* When aspect ratio is up to 824/580 */
+@media (max-aspect-ratio: 824/580) {
+  .row h1 {
+    font-size: 60px;
+  }
+  .row p {
+    font-size: 24px;
+  }
+  .central-row {
+    height: 140px;
+  }
+  .row img {
+    height: 380px;
+  }
+}
+
+/* When aspect ratio is up to 719/530 */
+@media (max-aspect-ratio: 719/530) {
+  .row h1 {
+    font-size: 50px;
+  }
+  .row p {
+    font-size: 20px;
+  }
+}
+
+/* Responsive font sizes and margins for specific small viewports */
+@media (max-aspect-ratio: 590/480) {
+  .header, .footer {
+    font-size: 28px;
+    padding: 0 14px;
+  }
+
+  main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .row h1 {
+    font-size: 40px;
+  }
+
+  .row p {
+    font-size: 16px;
+  }
+
+  .hide-on-mobile-small {
+    display: none;
+  }
+
+  .row img {
+    width: 100%;
+    height: 390px;
+  }
+}
+
+/* When aspect ratio is up to 480/430 */
+@media (max-aspect-ratio: 480/430) {
+  .header, .footer {
+    font-size: 24px;
+    padding: 0 12px;
+  }
+
+  main {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .row h1 {
+    font-size: 20px;
+  }
+
+  .row p {
+    font-size: 12px;
+  }
+
+  .central-row {
+    height: 80px;
+  }
+  .row img {
+    height: 420px;
+  }
+}
+
+/* When aspect ratio is up to 375/380 */
+@media (max-aspect-ratio: 375/380) {
+  .header, .footer {
+    font-size: 20px;
+    padding: 0 2px;
+  }
+
+  main {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .row h1 {
+    font-size: 18px;
+  }
+
+  .row p {
+    font-size: 11px;
+  }
+}
+
+/* When aspect ratio is up to 300/330 */
+@media (max-aspect-ratio: 300/330) {
+  .header, .footer {
+    font-size: 16px;
+    padding: 0 1px;
+  }
+
+  main {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .row h1 {
+    font-size: 16px;
+  }
+
+  .row p {
+    font-size: 10px;
+  }
+}
+/* Wider Screens */
+
+/* When aspect ratio is up to 2/1 (e.g., 1920/960) */
+@media (max-aspect-ratio: 2/1) {
+  .row h1 {
+    font-size: 160px;
+  }
+  .central-row {
+    height: 250px;
+  }
+}
+
+/* When aspect ratio is up to 21/9 (e.g., 2520/1080) */
+@media (max-aspect-ratio: 21/9) {
+  .row h1 {
+    font-size: 180px;
+  }
+  .central-row {
+    height: 280px;
+  }
+}
+
+/* Taller Screens */
+
+/* When aspect ratio is up to 3/4 (e.g., 720/960) */
+@media (max-aspect-ratio: 3/4) {
+  .row h1 {
+    font-size: 90px;
+  }
+  .central-row {
+    height: 200px;
+  }
+  .row img {
+    height: 320px;
+  }
+}
+
+/* When aspect ratio is up to 9/16 (e.g., 1080/1920) */
+@media (max-aspect-ratio: 9/16) {
+  .row h1 {
+    font-size: 80px;
+  }
+  .central-row {
+    height: 180px;
+  }
+  .row img {
+    height: 300px;
+  }
+}
+
+/* Square or Nearly Square Screens */
+
+/* When aspect ratio is up to 1/1 (e.g., 800/800) */
+@media (max-aspect-ratio: 1/1) {
+  .row h1 {
+    font-size: 100px;
+  }
+  .central-row {
+    height: 220px;
+  }
+  .row img {
+    height: 340px;
+  }
+}
+
+/* When aspect ratio is up to 5/4 (e.g., 1280/1024) */
+@media (max-aspect-ratio: 5/4) {
+  .row h1 {
+    font-size: 110px;
+  }
+  .central-row {
+    height: 240px;
+  }
+  .row img {
+    height: 360px;
+  }
+}
